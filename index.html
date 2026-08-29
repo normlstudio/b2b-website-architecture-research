@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B2B Website Architecture Research Kit | Norml Studio</title>
+  <meta name="description" content="A public Norml Studio research kit for reviewing B2B website architecture, information structure, page systems, CMS ownership, SEO foundations, and QA.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://normlstudio.github.io/b2b-website-architecture-research/">
+  <link rel="icon" type="image/png" href="assets/norml-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Norml Studio Research">
+  <meta property="og:title" content="B2B Website Architecture Research Kit">
+  <meta property="og:description" content="A public method, architecture checklist, review record, and source desk for evidence-led B2B website decisions.">
+  <meta property="og:url" content="https://normlstudio.github.io/b2b-website-architecture-research/">
+  <meta property="og:image" content="https://normlstudio.github.io/b2b-website-architecture-research/assets/norml-studio-social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="B2B Website Architecture Research Kit">
+  <meta name="twitter:description" content="A public method, architecture checklist, review record, and source desk from Norml Studio.">
+  <meta name="twitter:image" content="https://normlstudio.github.io/b2b-website-architecture-research/assets/norml-studio-social-card.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://norml.studio/#organization",
+        "name": "Norml Studio",
+        "url": "https://norml.studio/",
+        "logo": "https://normlstudio.github.io/b2b-website-architecture-research/assets/norml-logo.svg",
+        "description": "A design-led, engineering-backed studio for strategic websites and custom web software.",
+        "knowsAbout": ["B2B website systems", "Website information architecture", "Custom web design and development", "Structured content management systems", "SEO infrastructure", "Website quality assurance"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://norml.studio/team#max-tymoshyn",
+        "name": "Max Tymoshyn",
+        "url": "https://norml.studio/team",
+        "jobTitle": "Founder & Architect at Norml Studio",
+        "worksFor": {"@id": "https://norml.studio/#organization"},
+        "knowsAbout": ["Information architecture", "Website architecture", "Website strategy", "Web development practice", "Website delivery systems"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://normlstudio.github.io/b2b-website-architecture-research/#webpage",
+        "url": "https://normlstudio.github.io/b2b-website-architecture-research/",
+        "name": "B2B Website Architecture Research Kit",
+        "description": "A public research kit for reviewing B2B website architecture, content structure, reusable page systems, CMS ownership, SEO foundations, and QA.",
+        "inLanguage": "en-US",
+        "dateModified": "2026-08-29",
+        "author": {"@id": "https://norml.studio/team#max-tymoshyn"},
+        "publisher": {"@id": "https://norml.studio/#organization"},
+        "about": [
+          {"@type": "Thing", "name": "B2B website architecture"},
+          {"@type": "Thing", "name": "Information architecture"},
+          {"@type": "Thing", "name": "Web design systems"},
+          {"@type": "Thing", "name": "Content management systems"},
+          {"@type": "Thing", "name": "Technical SEO"},
+          {"@type": "Thing", "name": "Website quality assurance"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the research kit</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="logo" href="https://norml.studio/" aria-label="Norml Studio home">
+        <img src="assets/norml-icon.png" width="32" height="32" alt="">
+        <span>Norml Studio</span>
+      </a>
+      <nav class="desktop-nav links" aria-label="Research navigation">
+        <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/methodology.md">Method</a>
+        <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/checklists/b2b-website-architecture-review.md">Checklist</a>
+        <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/sources.md">Sources</a>
+      </nav>
+      <a class="button button--small site-header__cta" href="https://norml.studio/website-2-0">Website 2.0</a>
+      <button class="hamburger" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Open navigation">
+        <svg class="heroicons" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-panel__scrim" data-nav-close hidden></div>
+  <aside class="mobile-panel" id="mobile-panel" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="mobile-panel__top">
+      <a class="logo" href="https://norml.studio/" tabindex="-1">
+        <img src="assets/norml-icon.png" width="32" height="32" alt="">
+        <span>Norml Studio</span>
+      </a>
+      <button class="mobile-panel__close" type="button" aria-label="Close navigation" tabindex="-1" data-nav-close>
+        <svg class="heroicons" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+    </div>
+    <nav class="mobile-panel__nav" aria-label="Mobile research navigation">
+      <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/methodology.md" tabindex="-1">Method</a>
+      <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/checklists/b2b-website-architecture-review.md" tabindex="-1">Checklist</a>
+      <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/sources.md" tabindex="-1">Sources</a>
+      <a href="https://github.com/normlstudio/b2b-website-architecture-research" tabindex="-1">GitHub repository</a>
+    </nav>
+    <a class="button mobile-panel__action" href="https://norml.studio/website-2-0" tabindex="-1">See Website 2.0</a>
+  </aside>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1>A B2B website architecture research kit.</h1>
+          <p class="lead">I built this public starter to help founders, marketing leaders, and website teams inspect the system underneath a redesign: what the site needs to say, how pages connect, what the CMS owns, and what the team can keep improving after launch.</p>
+          <div class="hero__actions">
+            <a class="button" href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/checklists/b2b-website-architecture-review.md">Open the architecture checklist</a>
+            <a class="text-link" href="https://norml.studio/website-2-0">How Norml builds a website system</a>
+          </div>
+          <p class="hero__author">By <a href="https://norml.studio/team">Max Tymoshyn</a>, Founder &amp; Architect at Norml Studio.</p>
+        </div>
+        <figure class="hero__media">
+          <img src="assets/max-tymoshyn.jpg" width="2048" height="2048" alt="Max Tymoshyn, Founder and Architect at Norml Studio">
+          <figcaption>Maintained by Max Tymoshyn. Last reviewed August 29, 2026.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="method" id="method">
+      <div class="wrap method__grid">
+        <div class="section-heading">
+          <h2>Review the website as an operating system.</h2>
+          <p>A visual refresh can leave the original structural problems intact. The method follows the decisions that determine whether the site can explain the company, support sales, rank, and keep changing without another rebuild.</p>
+        </div>
+        <ol class="method__steps">
+          <li><span class="method__number">1</span><div><h3>Define the decision job</h3><p>Record the buyers, questions, objections, proof, and actions the website must support before judging its pages.</p></div></li>
+          <li><span class="method__number">2</span><div><h3>Trace the information architecture</h3><p>Map pages, navigation, content relationships, reusable templates, and the routes a buyer follows to understand the offer.</p></div></li>
+          <li><span class="method__number">3</span><div><h3>Verify the operating layer</h3><p>Inspect CMS ownership, component reuse, source control, SEO foundations, measurement, accessibility, QA, and handover.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="artifact" id="checklist">
+      <div class="wrap artifact__grid">
+        <div class="artifact__sheet" aria-label="Architecture review record example">
+          <div class="artifact__sheet-head"><strong>Architecture review record</strong><span>One website · one date</span></div>
+          <dl>
+            <div><dt>Strategic foundation</dt><dd>Audience, positioning, proof, decisions</dd></div>
+            <div><dt>Information architecture</dt><dd>Pages, labels, relationships, routes</dd></div>
+            <div><dt>Page system</dt><dd>Templates, components, states, reuse</dd></div>
+            <div><dt>Ownership</dt><dd>CMS, code, analytics, QA, handover</dd></div>
+          </dl>
+        </div>
+        <div class="artifact__copy">
+          <h2>A review another team member can inspect.</h2>
+          <p>The worksheet keeps the tested URL, review date, stakeholder job, architecture observation, evidence, owner, and next verification together. It separates what is visible from what requires access to code, CMS, analytics, or internal documentation.</p>
+          <p>Use it before a redesign, during discovery, or as a recheck after launch. The goal is not one universal score. It is a defensible record of which website decisions are stable, missing, duplicated, or trapped in one person’s head.</p>
+          <a class="button" href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/checklists/b2b-website-architecture-review.md">Read the complete checklist</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-boundary">
+      <div class="wrap local-boundary__grid">
+        <figure class="local-boundary__media">
+          <img src="assets/norml-studio-social-card.png" width="1200" height="630" alt="Norml Studio wordmark and website systems artwork">
+          <figcaption>Norml Studio builds strategic websites and custom web software.</figcaption>
+        </figure>
+        <div class="local-boundary__copy">
+          <h2>A website system should outlive the launch.</h2>
+          <p>The architecture is not only a sitemap. It includes the content model, reusable page patterns, component states, ownership boundaries, source control, analytics, QA, documentation, and the process for changing the site safely.</p>
+          <p>A useful review asks whether the team can publish a new page, update a claim, extend a template, diagnose a regression, and understand why a decision was made without recreating the project from old messages.</p>
+          <a class="text-link" href="https://norml.studio/blog/why-we-rebuilt-on-next-and-sanity">Read why Norml rebuilt its own website system</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="authority-context" id="authority">
+      <div class="wrap authority-context__grid">
+        <div class="authority-context__intro">
+          <h2>Who maintains this research.</h2>
+          <p>The project names the company, the practitioner, and the website decisions each one is connected to.</p>
+        </div>
+        <div class="authority-context__entities">
+          <article class="authority-context__entity">
+            <h3><a href="https://norml.studio/">Norml Studio</a></h3>
+            <p>Norml Studio is a design-led, engineering-backed studio for strategic websites and custom web software. Its website work connects positioning, information architecture, design systems, custom development, SEO infrastructure, QA, documentation, and long-term ownership.</p>
+            <a class="text-link" href="https://norml.studio/website-2-0">See Norml Studio’s Website 2.0 system</a>
+          </article>
+          <article class="authority-context__entity">
+            <h3><a href="https://norml.studio/team">Max Tymoshyn</a></h3>
+            <p>Max Tymoshyn is Founder &amp; Architect at Norml Studio. His work here focuses on website architecture, information architecture, strategy, implementation decisions, and the delivery systems that make a website understandable and maintainable after launch.</p>
+            <a class="text-link" href="https://norml.studio/team">Meet the Norml Studio team</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="files" id="files">
+      <div class="wrap files__grid">
+        <div class="files__heading">
+          <h2>Use the original files.</h2>
+          <p>The public page is the entry point. The working material stays versioned, linkable, and open to corrections.</p>
+        </div>
+        <div class="files__links">
+          <a class="files__primary" href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/methodology.md"><strong>Research methodology</strong><span>Questions, evidence levels, review sequence, publication rules, and recheck.</span></a>
+          <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/checklists/b2b-website-architecture-review.md"><strong>B2B website architecture checklist</strong><span>Strategy, information architecture, page systems, CMS, engineering, SEO, and QA.</span></a>
+          <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/templates/website-review-record.md"><strong>Architecture review record</strong><span>A repeatable template for one website on one review date.</span></a>
+          <a href="https://github.com/normlstudio/b2b-website-architecture-research/blob/main/sources.md"><strong>Standards and source desk</strong><span>Open web standards, current search guidance, accessibility references, and test tools.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="source-desk" id="sources">
+      <div class="wrap source-desk__grid">
+        <div>
+          <h2>Standards before conclusions.</h2>
+          <p>Architecture findings should point to a visible behavior, source artifact, or current standard. A recommendation without evidence is only an opinion.</p>
+        </div>
+        <div class="source-desk__columns">
+          <div><h3>Open web foundations</h3><ul>
+            <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C Web Content Accessibility Guidelines</a></li>
+            <li><a href="https://html.spec.whatwg.org/">WHATWG HTML Living Standard</a></li>
+            <li><a href="https://schema.org/">Schema.org vocabulary</a></li>
+          </ul></div>
+          <div><h3>Search and performance</h3><ul>
+            <li><a href="https://developers.google.com/search/docs/crawling-indexing/overview">Google crawling and indexing guidance</a></li>
+            <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google SEO starter guide</a></li>
+            <li><a href="https://web.dev/learn/performance">web.dev performance guidance</a></li>
+          </ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap closing__grid">
+        <h2>Need the architecture applied to a website your team will keep?</h2>
+        <div>
+          <p>Norml Studio plans the content and structure, builds the design and page system, develops the website, and documents the operating rules so the team can own what ships.</p>
+          <a class="button button--light" href="https://norml.studio/website-2-0">See Website 2.0</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div>
+        <a class="logo logo--footer" href="https://norml.studio/"><img src="assets/norml-icon.png" width="32" height="32" alt=""><span>Norml Studio</span></a>
+        <p>Public research for evidence-led B2B website architecture decisions.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/normlstudio/b2b-website-architecture-research">GitHub repository</a>
+        <a href="https://norml.studio/blog">Norml Studio blog</a>
+        <a href="https://norml.studio/team">About Max</a>
+      </nav>
+      <p class="site-footer__credit">© 2026 Norml Studio</p>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <!--
+    Design anti-slop audit v2.9.0
+    PASS: rounded-card-soup; faux-callout-box; flat-type-hierarchy; uniform-line-height;
+    unbounded-measure; faux-mono-garnish; monospace-as-aesthetic; eyebrow-kicker-reflex;
+    default-tailwind-palette; decorative-gradient-blob; decorative-glassmorphism;
+    per-section-background-reflex; mixed-icon-stroke-weights; emoji-as-icons;
+    equal-column-grid-reflex; symmetric-two-button-hero; flanking-microcopy;
+    bento-grid-reflex; symmetric-section-padding; hollow-hero-metrics;
+    uncontained-measure-sprawl; dead-half-and-void; lone-element-bar; flattened-asymmetry;
+    squashed-sections; decorative-rule-crutch; unaligned-adjacent-blocks; letterbox-slab;
+    full-bleed-list-row; accent-rail-selection; detached-ordinal-gutter;
+    everything-fades-up-on-scroll; symmetric-ease-everywhere; parallax-scroll-jack;
+    ai-photo-tells; stock-cliche-imagery; literal-ai-tech-imagery;
+    corporate-memphis-illustration; lack-of-imagery.
+  -->
+</body>
+</html>

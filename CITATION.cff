@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: Please cite this research kit using the metadata below.
+title: B2B Website Architecture Research Starter
+authors:
+  - family-names: Tymoshyn
+    given-names: Max
+repository-code: https://github.com/normlstudio/b2b-website-architecture-research
+url: https://norml.studio/
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2026-08-29
+keywords:
+  - B2B website architecture
+  - information architecture
+  - web design systems
+  - content modeling
+  - technical SEO
+  - website quality assurance
