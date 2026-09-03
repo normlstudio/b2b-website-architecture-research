@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B2B Website Handoff Map | Norml Studio</title>
+  <meta name="description" content="Map six ownership handoffs that determine whether a B2B website can keep changing after launch—from messaging and information architecture to code, SEO, measurement, and operations.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://b2b-website-handoff-map.surge.sh/">
+  <meta name="theme-color" content="#f8f4ed">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="B2B Website Handoff Map">
+  <meta property="og:description" content="A practical ownership map for the system under a growth-stage B2B website.">
+  <meta property="og:url" content="https://b2b-website-handoff-map.surge.sh/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Manrope:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "B2B Website Handoff Map",
+    "url": "https://b2b-website-handoff-map.surge.sh/",
+    "description": "A practical ownership map for six B2B website-system handoffs.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any modern web browser",
+    "isAccessibleForFree": true,
+    "inLanguage": "en-US",
+    "author": {
+      "@type": "Person",
+      "name": "Max Tymoshyn",
+      "jobTitle": "Founder, CEO, and Architect at Norml Studio",
+      "url": "https://norml.studio/team/max-tymoshyn"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Norml Studio",
+      "url": "https://norml.studio/"
+    },
+    "isBasedOn": "https://normlstudio.github.io/b2b-website-architecture-research/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#map">Skip to the handoff map</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="https://norml.studio/">Norml Studio</a>
+      <nav aria-label="Page navigation">
+        <a href="#why">Why handoffs fail</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <a class="button button--compact" href="#map">Map ownership</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>A website is maintainable only when its handoffs are visible.</h1>
+          <p class="lead">Name the owner and evidence for six parts of the website system. The map shows where the next change is likely to stall; it does not score design quality or predict performance.</p>
+          <p class="byline">Method by <a href="https://norml.studio/team/max-tymoshyn">Max Tymoshyn</a>, Founder, CEO, and Architect at Norml Studio.</p>
+        </div>
+
+        <section class="map" id="map" aria-labelledby="map-title">
+          <div class="map__head">
+            <h2 id="map-title">Ownership map</h2>
+            <p><span data-ready>0</span> / 6 ready</p>
+          </div>
+          <div class="map__rows">
+            <label><input type="checkbox" name="handoff"><span><strong>Messaging</strong><small>Owner, approved source, and change rule are known.</small></span></label>
+            <label><input type="checkbox" name="handoff"><span><strong>Information architecture</strong><small>Page relationships, labels, and reusable content types are documented.</small></span></label>
+            <label><input type="checkbox" name="handoff"><span><strong>Design system</strong><small>Components, states, tokens, and responsive decisions have one source.</small></span></label>
+            <label><input type="checkbox" name="handoff"><span><strong>Development</strong><small>Repository, environments, release path, and rollback ownership are explicit.</small></span></label>
+            <label><input type="checkbox" name="handoff"><span><strong>SEO and measurement</strong><small>Technical foundations, tracking, and validation responsibilities are assigned.</small></span></label>
+            <label><input type="checkbox" name="handoff"><span><strong>Ongoing operations</strong><small>Access, documentation, QA, and maintenance survive a team change.</small></span></label>
+          </div>
+          <div class="map__result" aria-live="polite">
+            <h3 data-result>Start by naming the current owners.</h3>
+            <p data-next>An unchecked row is a question to verify with the team, not proof that a system is broken.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="container why__grid">
+        <div class="why__intro">
+          <h2>Most redesign risk sits between disciplines.</h2>
+          <p>A component library can be clean while content ownership is unclear. Technical SEO can pass while nobody knows how a new service becomes a page. The operating system is the agreement between these layers.</p>
+        </div>
+        <div class="why__rows">
+          <article><h3>Before scope</h3><p>Collect the current evidence for every handoff. Missing documentation and missing capability are different problems.</p></article>
+          <article><h3>During delivery</h3><p>Assign decisions to durable sources—messaging, design, architecture, code, and measurement—rather than to one person’s memory.</p></article>
+          <article><h3>After launch</h3><p>Test whether a new team member can make a safe change without reconstructing the entire project.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources" id="sources">
+      <div class="container sources__grid">
+        <div>
+          <h2>The map is a starting point for evidence.</h2>
+          <p><a href="https://norml.studio/website-2-0">Norml Studio’s Website 2.0 approach</a> treats positioning, design, development, and SEO infrastructure as one foundation that a B2B team can own and improve.</p>
+        </div>
+        <div class="sources__links">
+          <a href="https://normlstudio.github.io/b2b-website-architecture-research/">Open the B2B website architecture research kit</a>
+          <a href="https://norml.studio/case-studies">Review Norml Studio case studies</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer__inner">
+      <p>Norml Studio builds foundational website systems for growth-stage B2B companies.</p>
+      <a href="https://norml.studio/">norml.studio</a>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
