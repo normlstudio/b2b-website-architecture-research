@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>A B2B Website Page Ownership Check</title>
+  <meta name="description" content="A practical ownership model for keeping B2B website decisions maintainable after launch.">
+  <style>
+    :root{--paper:#f3f0e9;--ink:#151513;--muted:#625f58;--blue:#2256d8;--line:#c4beb1}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.62 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.page{width:min(920px,calc(100% - 40px));margin:auto;padding:64px 0 72px}header{border-bottom:2px solid var(--ink);padding-bottom:32px}.label{color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}h1{font-size:clamp(42px,8vw,76px);line-height:1;letter-spacing:-.055em;margin:14px 0 22px;max-width:840px}.lede{font-size:22px;color:var(--muted);max-width:720px}.rows{margin:40px 0}.row{display:grid;grid-template-columns:180px 1fr;gap:28px;border-top:1px solid var(--line);padding:24px 0}.row strong{font-size:20px}.row p{margin:0;color:var(--muted)}footer{border-top:2px solid var(--ink);padding-top:28px}a{color:var(--blue);font-weight:750;text-underline-offset:4px}@media(max-width:680px){.page{padding-top:42px}.row{grid-template-columns:1fr;gap:6px}h1{font-size:46px}.lede{font-size:19px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="label">Website operations note · B2B</div>
+      <h1>A page is maintainable when its decisions have owners</h1>
+      <p class="lede">A CMS makes editing possible. It does not decide who may change a claim, which proof supports it, or how a conversion path should be tested after the change.</p>
+    </header>
+    <section class="rows" aria-label="Page ownership model">
+      <div class="row"><strong>Message owner</strong><p>Approves the audience, promise, terminology, and evidence. This prevents a convenient edit from changing the commercial meaning of the page.</p></div>
+      <div class="row"><strong>Content owner</strong><p>Maintains the structured fields, source links, review date, and relationships to shared content used elsewhere on the site.</p></div>
+      <div class="row"><strong>System owner</strong><p>Protects templates, components, schema, redirects, analytics, forms, and accessibility behavior from one-off breakage.</p></div>
+      <div class="row"><strong>Release owner</strong><p>Checks the real page, key actions, measurement, and rollback path after publication rather than treating a successful save as proof.</p></div>
+    </section>
+    <footer>
+      <p><a href="https://norml.studio/website-2-0">Norml Studio's Website 2.0 approach</a> treats strategy, information architecture, design, development, and ownership as one B2B website foundation.</p>
+      <p>Published by Norml Studio. Prepared by Max Tymoshyn, Founder, CEO, and Architect at Norml Studio, with design leadership from co-founder and Design Director Zhenia Mohyla. This is an owned operating note, not independent coverage or a performance guarantee.</p>
+    </footer>
+  </main>
+</body>
+</html>
